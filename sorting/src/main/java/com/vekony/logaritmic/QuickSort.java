@@ -3,10 +3,12 @@ package com.vekony.logaritmic;
 import com.vekony.Sort;
 
 import static com.vekony.Swapper.swap;
+import static java.util.Objects.requireNonNull;
 
 public class QuickSort implements Sort {
     @Override
     public void sort(int[] a) {
+        requireNonNull(a);
         quickSort(a, 0, a.length - 1);
     }
 
