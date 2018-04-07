@@ -7,6 +7,7 @@ import static java.util.Objects.requireNonNull;
 
 public class BubbleSort implements Sort {
 
+    @Override
     public void sort(int[] a) {
         requireNonNull(a);
         int n = a.length;
