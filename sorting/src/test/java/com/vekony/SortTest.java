@@ -1,6 +1,7 @@
 package com.vekony;
 
 import com.vekony.logaritmic.MergeSort;
+import com.vekony.logaritmic.QuickSort;
 import com.vekony.quadratic.BubbleSort;
 import com.vekony.quadratic.InsertionSort;
 import com.vekony.quadratic.SelectionSort;
@@ -35,6 +36,11 @@ public class SortTest {
     @Test
     public void testMergeSort() {
         test(new MergeSort());
+    }
+
+    @Test
+    public void testQuickSort() {
+        test(new QuickSort());
     }
 
     private void test(Sort sort) {
